@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <style>
+            @keyframes anim1 {
+                25%{
+                    background-color: darkviolet;
+                    margin-left: 10cm;
+                    margin-top: 10cm;
+                }
+                50%{
+                    background-color: darkorange;
+                    margin-left: 15cm;
+                    margin-top: 10cm;
+                }
+                75%{
+                    background-color: olive;
+                    margin-left: 15cm;
+                    margin-top: 20cm;
+                }
+                100%{
+                    background-color: deeppink;
+                    margin-left: 10cm;
+                    margin-top: 20cm;
+                }
+            }
+            #div1{
+                background-color: darkred;
+                margin-left: 10cm;
+                    margin-top: 10cm;
+                animation-name: anim1;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-delay: 1s;
+            }
+            #div2{
+                background-color: darkgreen;
+                margin-left: 120px;
+                    margin-top: 100px;
+                animation-name: anim1;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-delay: 1s;
+            }
+            #div3{
+                background-color: darkorange;
+                margin-left: 120px;
+                    margin-top: 120px;
+                animation-name: anim1;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-delay: 1s;
+            }
+            #div4{
+                background-color:navy;
+                margin-left: 100px;
+                    margin-top: 120px;
+                animation-name: anim1;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-delay: 1s;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="div1" style="height:50px; width: 50px;">Cube 1</div>
+        <div id="div2" style="height:50px; width: 50px;">Cube 2</div>
+        <div id="div3" style="height:50px; width: 50px;">Cube 3</div>
+        <div id="div4" style="height:50px; width: 50px;">Cube 4</div>
+        
+    </body>
+</html>

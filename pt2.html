@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+            var n1=parseInt($('#num1').val());
+            var n2=parseInt($('#num2').val());
+            var addition=n1+n2;
+            $('#result').val(addition);
+            $("#mydiv").html("Addition:- "+addition);
+            })
+            
+        });
+    </script>
+</head>
+<body>
+    Number 1:-<input type="number" name="num1" id="num1">
+    Number 2:-<input type="number" name="num2" id="num2">
+    Result :-<input type="text" name="result" id="result">
+    <button type="button" name="btn" id="btn">Add</button>
+    <div id="mydiv"></div> 
+    
+</body>
+</html>

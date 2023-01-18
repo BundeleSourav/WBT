@@ -1,0 +1,35 @@
+<head>
+    <script>
+
+        function showmsg()
+        {
+            console.log(event);
+            window.alert("Please confirm again");
+
+        }
+
+        function showselect()
+        {
+            var ans=confirm("Select Your Choice:-Y/N");
+            if(ans)
+            {
+                alert("You select :"+ans);
+            }
+            else{
+                alert("You selected :"+ans);
+            }
+        }
+
+        function showadd()
+        {
+            n1=prompt("Num 1:- ");
+            n2=prompt("Num 2:- ");
+            addition=parseInt(n1)+parseInt(n2);
+            alert("Answer:- "+addition);
+        }
+    </script>
+
+</head>
+    <button type="button" name="btn" id="btn" onclick="showmsg()">Show Details</button>
+    <button type="button" name="btn1" id="btn1" onclick="showselect()">Select Choice</button>
+    <button type="button" name="btn2" id="btn2" onclick="showadd()">showadd</button>

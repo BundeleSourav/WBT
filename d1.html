@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(":input[type:'text']").focus(function(){
+                $(this).css("background-color","yellow")
+            })
+            $-(":input[type='text']").blur(function(){
+                $(this).css("background-color","cyan")
+            })
+        })
+        
+    </script>
+</head>
+<body>
+    <div id="div1">
+        Name:- <input type="text" name="nm" id="nm1"><br>
+        Name:- <input type="text" name="nm" id="nm2"><br>
+        Name:- <input type="text" name="nm" id="nm3"><br>
+        Name:- <input type="text" name="nm" id="nm4"><br>  
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            h1::before{
+                content:"This is before h1";
+            }
+            h2::after{
+                content:"----This is after h1"
+            }
+            article p:nth-child(1)::first-line,h1,h3{
+                background-color: coral;
+                color: crimson;
+                border: 2px dashed brown;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color:lightsalmon; background-color: orangered; border-radius: 6px;">This is Header h1</h1>
+        <h1 class="myclass">This is h1</h1>
+        <p id="myp">This is para1</p>
+        <p class="myclass">This is para2</p>
+        <p>This is para3</p>
+        <div>
+            <p>This is para1 in div</p>
+            <p>This is para2 in div</p>
+            <p class="myclass">This is para3 in div</p>
+            <article>
+                <p>This is para1 in div in article</p>
+                <p>This is para2 in div in article</p>
+                <p class="myclass">This is para3 in div in article</p>
+            </article>
+
+        </div>
+        <h4 class="myclass">This is h4</h4>
+    </body>
+</html>
