@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calculate(event){
+            var n1=parseInt(document.getElementById("num1").value);
+            var n2=parseInt(document.getElementById("num2").value);
+            switch(event.target.id)
+            {
+                case "btn":
+                    document.write(`Addition ${n1+n2}`)
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <table cellpadding="10px">
+        <tr>
+            <td><label for="num1">Enter Number</label></td>
+            <td><input type="number" name="num1" id="num1"></td>
+        </tr>
+        <br>
+        <tr>
+            <td><label for="num2"></label>Enter Number</td>
+            <td><input type="number" name="num2" id="num2"></td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" name="btn" id="btn" value="+" onclick="calculate(event)">Calculate</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
